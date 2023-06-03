@@ -9,7 +9,7 @@ $.getJSON("./data.json", data => {
         div.classList.add(`list-${data[i].category}`);
         div.innerHTML =`
             <div>
-                <img src="${data[i].icon}">
+                <img src="${data[i].icon}" alt="icon">
                 <span id="${data[i].category}"> ${data[i].category}</span>
             </div>
             <div class="personal-score">
